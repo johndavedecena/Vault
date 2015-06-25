@@ -1,0 +1,1 @@
+$("[name='activate-deactivate']").bootstrapSwitch();

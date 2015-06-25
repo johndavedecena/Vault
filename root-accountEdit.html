@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NetworkLabs IT Assets | Root Admin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Loading Font-Awesome -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Loading Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Loading Flat UI -->
+        <link href="css/nwlassets.css" rel="stylesheet">
+        <link href="css/nwlcss.css" rel="stylesheet">
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/nwlfavi.ico">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <div class="header_footer">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="root-home.html"><img alt="logo" src="images/nwl/nwllogo.png"/></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a class="main_nav" href="root-home.html">Accounts</a></li>
+                        <li class="dropdown main_nav">
+                            <a  href="#" class="dropdown-toggle" data-toggle="dropdown">Assets <i class="fa fa-chevron-down"></i></a>
+                            <span class="dropdown-arrow"></span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown dropdown-submenu">
+                                    <a  href="#" class="dropdown-toggle" data-toggle="dropdown">Client</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="root-assets.html">Laptop</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="root-assets.html">Monitor</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="root-assets.html">Docking Station</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown dropdown-submenu">
+                                    <a  href="#" class="dropdown-toggle" data-toggle="dropdown">Network</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Access Point</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Routers</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Switches</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">SFP</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">VoIP Phones</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown dropdown-submenu">
+                                    <a  href="#" class="dropdown-toggle" data-toggle="dropdown">Office Equipment</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Printers</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Projectors</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">UPS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown main_nav">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Database <i class="fa fa-chevron-down"></i></a>
+                            <span class="dropdown-arrow"></span>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Import</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Export</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="main_nav" href="#">Employees</a></li>
+                    </ul>
+                    <div class="dropdown navbar-right">      
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><img class="circle" src="images/users/default.gif"/></a>
+                        <span class="dropdown-arrow"></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="location.href='root-settings.html'">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <p class="navbar-text navbar-right">Root Admin</p>
+                    <p class="navbar-text navbar-right">Signed in as</p>
+                </div>
+            </nav><!-- /navbar -->
+
+            <div class="main_contain">
+                <div class="space"></div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h6>Edit User Account Information</h6>
+                        <div class="fright circle"><img src="images/users/lalic.gif"/></div>
+                        <strong>Database ID # </strong>
+                        <form>
+                            <div class="form-group">
+                                <table class="table table-condensed table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th width="10%"></th>
+                                            <th width="24%"></th>
+                                            <th width="22%"></th>
+                                            <th width="22%"></th>
+                                            <th width="22%"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Username</td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="lorenalatan" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Password</td>
+                                            <td>Old Password
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="password" class="form-control" value="NWL-0-12345" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td>New Password
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="password" class="form-control" placeholder="Input New Password">
+                                                </div>
+                                            </td>
+                                            <td>Confirm New Password
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="password" class="form-control" placeholder="Re-type New Password">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Last Name
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="Alatan" disabled>
+                                                </div>
+                                            </td>
+                                            <td>First Name
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="Loren Angela" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>E-Mail</td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="loren.alatan.ext@nsn.com" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" placeholder="Input New E-Mail">
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date Registered</td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <label class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+                                                    <input type="text" class="form-control" value="2011-07-30" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>User Type</td>
+                                            <td>Current User Type
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="Admin" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td>New User Type
+                                                <select class="form-control input-sm">
+                                                    <option value="0" selected="selected">Select User Type...</option>
+                                                    <option value="1">Admin</option>
+                                                    <option value="2">User</option>
+                                                </select>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td>Current Account Status
+                                                <div class="input-group input-group-sm">
+                                                    <span class="input-group-addon">>></span>
+                                                    <input type="text" class="form-control" value="Activated" disabled>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td>Change Account Status
+                                                <select class="form-control input-sm">
+                                                    <option value="0" selected="selected">Select Account Status...</option>
+                                                    <option value="1">Activated</option>
+                                                    <option value="2">Deactivated</option>
+                                                </select>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button class="fright btn btn-sm btn-info" onclick="location.href='root-home.html'" type="button" name="">Back</button>
+                                                <button class="fright btn btn-sm btn-info" onclick="return confirm('Are you sure you want to update this information?');" type="submit" name="">Save Changes</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="header_footer">
+                        <p>&copy; 2014 NetworkLabs Inc.</p>
+                        <img src="images/footer/nwl-logo-footer.png"/>
+                    </div>
+                </footer><!-- /.footer -->
+            </div>
+        </div><!-- /.container -->
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/jquery.value.js"></script>
+    <script src="js/sub-menu.js"> </script>
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script src="js/edit-function.js"></script>
+    </body>
+</html>
